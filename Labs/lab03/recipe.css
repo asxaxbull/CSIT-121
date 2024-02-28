@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/gumbopot.JPG');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+
+#title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+header, section {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#gumbo {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 0px;
+    background: linear-gradient(rgba(125, 125, 125, 1), rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+}
+
+#gumbobowl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    display: block;
+}
+
+ul li {
+    margin: 5px;
+    list-style: circle;
+}
+
+ol li {
+    margin: 5px;
+    list-style: lower-roman;
+}
+
+a:link, a:visited {
+    color: greenyellow;
+    text-decoration: none;
+}
