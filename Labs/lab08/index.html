@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All About Forms</title>
+</head>
+<body>
+    <div class="container">
+        <h1>All About Forms</h1>
+        <h2>By Asa M. | CSIT 121</h2>
+        <section>
+            <h3>What Are Forms?</h3>
+            <p><b>Forms</b> are an HTML element that allow a website's users to
+            enter information that is then collected and used by the website's
+            servers. Forms are made up of form elements — pieces of HTML code that
+            represent fields, buttons, and more — which are then contained in a
+            <b>&lt;form&gt;</b> tag.</p>
+        </section>
+        <div class="forminfo">
+            <section class="info-a">
+                <h3>The Input Tag</h3>
+                <p>The <b>&lt;input&gt;</b> tag is a multifaceted HTML element
+                that allows a website's users to input data in a number of
+                different ways. There are a number of different types of inputs,
+                including text boxes, radio buttons, checkboxes, and more.</p>
+            </section>
+            <div class="form-a">
+                <form id="form-a" name="form-a" action="index.html" method="post">
+                    <label for="a-text">Text: </label><input type="text" name="a-text" id="a-text" size="10"><br>
+                    Radio:<br>
+                    <label><input type="radio" name="a-radio" id="radio1"> Option 1</label><br>
+                    <label><input type="radio" name="a-radio" id="radio2"> Option 2</label><br>
+                    Checkboxes:<br>
+                    <label><input type="checkbox" name="a-check1" id="check1"> Check 1</label><br>
+                    <label><input type="checkbox" name="a-check2" id="check2"> Check 2</label><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <section class="info-b">
+                <h3>The Text Area Tag</h3>
+                <p>The <b>&lt;textarea&gt;</b> tag is a large text box that allows
+                users to enter large blocks of text. This tag is useful for entering
+                comments or submitting answers</p>
+            </section>
+            <div class="form-b">
+                <form id="form-b" name="form-b" action="index.html" method="post">
+                    <label><textarea name="area-b" id="area-b" cols="19" rows="5"></textarea></label>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <section class="info-c">
+                <h3>The Select Tag</h3>
+                <p>The <b>&lt;select&gt;</b> tag allows the user to select an option
+                from a dropdown. This is useful if there are too many options to
+                display in a radio button.</p>
+            </section>
+            <div class="form-c">
+                <form id="form-c" name="form-c" action="index.html" method="post">
+                    <label for="select-c">Selections:</label> <br>
+                    <select name="select-c" id="select-c" size="5" multiple>
+                        <option value="one">Option One</option>
+                        <option value="two">Option Two</option>
+                        <option value="three">Option Three</option>
+                        <option value="four">Option Four</option>
+                        <option value="five">Option Five</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <section class="info-d">
+                <h3>The Button Tag</h3>
+                <p>The <b>&lt;button&gt;</b> tag allows the user creates an interactable
+                area that the user can click on to perform an action. This tag can be used
+                to create submit buttons, reset buttons, and more.</p>
+            </section>
+            <div class="form-d">
+                <form id="form-d" name="form-d" action="index.html" method="post">
+                    <label><button type="button">Button 1</button></label>
+                    <label><button type="button">Button 2</button></label>
+                    <label><button type="button">Button 3</button></label>
+                    <label><button type="button">Button 4</button></label>
+                    <label><button type="button">Button 5</button></label>
+                    <label><button type="button">Button 6</button></label>
+                    <label><button type="button">Button 7</button></label>
+                    <label><button type="button">Button 8</button></label><br><br>
+                    <label><button type="submit">Submit</button></label>
+                </form>
+            </div>
+            <section class="info-e">
+                <h3>The Fieldset Tag</h3>
+                <p>The <b>&lt;fieldset&gt;</b> tag creates a stylized region into which
+                form elements can be placed. Fieldsets are used to group form elements
+                together and label the form itself in a way that's visible to users.</p>
+            </section>
+            <div class="form-e">
+                <fieldset>
+                    <legend>Fieldset</legend>
+                    <label><input type="radio" name="e-radio" id="radio3"> Option 3</label><br>
+                    <label><input type="radio" name="e-radio" id="radio4"> Option 4</label><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

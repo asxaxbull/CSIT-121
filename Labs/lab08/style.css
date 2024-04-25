@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #339933;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+    width: 75%;
+    min-width: 750px;
+    max-width: 1000px;
+    margin: auto;
+    background: linear-gradient(
+        rgb(255, 255, 255, 0.75), 
+        rgb(255, 255, 255, 0.75));
+    border-radius: 10px;
+    border: solid 2px rgb(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3px;
+}
+
+b {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.forminfo {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "info-a info-a info-a form-a"
+        "form-b info-b info-b info-b"
+        "info-c info-c info-c form-c"
+        "form-d info-d info-d info-d"
+        "info-e info-e info-e form-e";
+}
+
+.info-a, .info-b, .info-c, .info-d, .info-e {
+    background: rgb(255, 255, 255, 0.5);
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.form-a, .form-b, .form-c, .form-d, .form-e {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 3px;
+    vertical-align: middle;
+}
+
+.info-b, .info-d, .form-b, .form-d {
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.info-b, .info-d {
+    text-align: right;
+}
+
+.info-a {
+    grid-area: info-a;
+    border-top-left-radius: 5px;
+    border: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.form-a {
+    grid-area: form-a;
+    border-top-right-radius: 5px;
+    border-top: solid 2px rgb(0, 0, 0, 0.5);
+    border-right: solid 2px rgb(0, 0, 0, 0.5);
+    border-bottom: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.info-b {
+    grid-area: info-b;
+    border-left: solid 2px rgb(0, 0, 0, 0.5);
+    border-right: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.form-b {
+    grid-area: form-b;
+    border-left: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.info-c {
+    grid-area: info-c;
+    border: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.form-c {
+    grid-area: form-c;
+    border-top: solid 2px rgb(0, 0, 0, 0.5);
+    border-right: solid 2px rgb(0, 0, 0, 0.5);
+    border-bottom: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.info-d {
+    grid-area: info-d;
+    border-left: solid 2px rgb(0, 0, 0, 0.5);
+    border-right: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.form-d {
+    grid-area: form-d;
+    border-left: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.info-e {
+    grid-area: info-e;
+    border-bottom-left-radius: 5px;
+    border: solid 2px rgb(0, 0, 0, 0.5);
+}
+
+.form-e {
+    grid-area: form-e;
+    border-bottom-right-radius: 5px;
+    border-top: solid 2px rgb(0, 0, 0, 0.5);
+    border-right: solid 2px rgb(0, 0, 0, 0.5);
+    border-bottom: solid 2px rgb(0, 0, 0, 0.5);
+}
